@@ -93,7 +93,7 @@ ops.forEach((op) => {
 
 equal.addEventListener("click", (e) => {
   // Dividing by 0
-  if (func == "/" && second == 0) {
+  if (func == "/" && second === "0") {
     updateActive("Don't even think about it dude");
     initiatlize("first", "");
     return;

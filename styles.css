@@ -1,0 +1,93 @@
+:root {
+  --pink: rgb(245, 109, 216);
+  --dark-pink: rgb(194, 84, 170);
+  --light-pink: rgb(244, 157, 225);
+  --lighter-pink: rgb(242, 183, 229);
+  --lightest-pink: rgb(173, 51, 145);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 25px;
+  margin: 2px;
+  background: var(--pink);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+button:hover {
+  background: var(--dark-pink);
+}
+
+.ac,
+.zero {
+  display: flex;
+}
+
+.ac button,
+.zero button {
+  flex: 1;
+}
+
+.calcContainer {
+  display: flex;
+  flex-direction: column;
+  background: var(--lighter-pink);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.activeNum {
+  text-align: right;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: var(--pink);
+}
+
+.calcContaner-top {
+  padding: 10px 20px;
+  margin: 10px 0;
+  background: white;
+  border-radius: 25px;
+}
+
+.allButtons {
+  display: flex;
+  flex-direction: row;
+}
+
+.calcContainer-left {
+  flex: 3;
+}
+
+.calcContainer-left .numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.calcContainer-right {
+  flex: 1;
+}
+
+.calcContainer-right .operations {
+  display: flex;
+  flex-direction: column;
+}
