@@ -60,6 +60,7 @@ let updateActive = function (num) {
   active.textContent = num;
 };
 
+// Looping through number buttons and adding listeners
 nums.forEach((num) => {
   num.addEventListener("click", (e) => {
     // Checking for solved status, if they've already solved one problem
